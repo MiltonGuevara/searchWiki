@@ -2,5 +2,5 @@
 <a [href]= "'https://es.wikipedia.org/?curid=' + article.pageid" target="_blank">
     {{article.title}}
 </a>
-<p>{{article.snippet}}</p>
+<p [innerHTML]="article.snippet"></p>
 </article>
